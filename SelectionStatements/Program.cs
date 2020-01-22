@@ -92,19 +92,30 @@ namespace SelectionStatements
 
         {//SyntaxSugar Exercise
 
-            var answer = 9;
-            //string response;
+            //var answer = 9;
+            ////string response;
 
-            var response = answer < 9 ? $"{answer} is less than nine" : answer > 9 ? $"{answer} is greater than nine" : $"{answer} is equal to nine";
-            Console.WriteLine(response);
+            //var response = answer < 9 ? $"{answer} is less than nine" : answer > 9 ? $"{answer} is greater than nine" : $"{answer} is equal to nine";
+            //Console.WriteLine(response);
             //if (answer < 9)
             //{
-                
+
             //    // response = answer + " is less than nine";
             //}
 
 
+            {//foreach
+                //sum the items in an array
+                int sum = 0;
+                var array = new int[] {1,2,3,4 };
+                foreach(var num in array)
+                {
+                    sum += num;
+                    
+                }
+                Console.WriteLine(sum);
 
+            }
 
         }
     }
