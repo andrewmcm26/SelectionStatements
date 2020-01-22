@@ -5,59 +5,59 @@ namespace SelectionStatements
     class Program
     {
         static void Main(string[] args)
-        {// IF-ELSE EXERCISE
-            var favNum = 1;
-           
-            Console.WriteLine("Try to guess my favorite number.");
-            var guess = int.Parse(Console.ReadLine());
+       // {// IF-ELSE EXERCISE
+         //var favNum = 1;
 
-            do
-            {
-                if (guess < favNum)
-                {
-                    Console.WriteLine("Too low");
-                    Console.WriteLine("Would you like to guess again?");
-                    var guessAgain = Console.ReadLine();
-                    if (guessAgain == "yes")
-                    {
-                        Console.WriteLine("Okay take another shot");
-                        guess = int.Parse(Console.ReadLine());
-                        if (guess == 1)
-                        {
-                            Console.WriteLine("booyah!");
-                        }
-                    }
-                    else
-                        guess = 1;
-                }
-                else if (guess > favNum)
-                {
-                    Console.WriteLine("Too high");
-                    Console.WriteLine("Would you like to guess again?");
-                        var guessAgain = Console.ReadLine();
-                    if (guessAgain == "yes")
-                    {
-                        Console.WriteLine("Okay take another shot");
-                        guess = int.Parse(Console.ReadLine());
-                        if(guess == 1)
-                        {
-                            Console.WriteLine("booyah!");
-                        }
-                    }
-                    else
-                        guess = 1;
-                }
+            //Console.WriteLine("Try to guess my favorite number.");
+            //var guess = int.Parse(Console.ReadLine());
 
-                else /*if(guess == 1)*/
-                {
-                    Console.WriteLine("booyah!");
-                }
-            }
-            while (guess != favNum);
+            //do
+            //{
+            //    if (guess < favNum)
+            //    {
+            //        Console.WriteLine("Too low");
+            //        Console.WriteLine("Would you like to guess again?");
+            //        var guessAgain = Console.ReadLine();
+            //        if (guessAgain == "yes")
+            //        {
+            //            Console.WriteLine("Okay take another shot");
+            //            guess = int.Parse(Console.ReadLine());
+            //            if (guess == 1)
+            //            {
+            //                Console.WriteLine("booyah!");
+            //            }
+            //        }
+            //        else
+            //            guess = 1;
+            //    }
+            //    else if (guess > favNum)
+            //    {
+            //        Console.WriteLine("Too high");
+            //        Console.WriteLine("Would you like to guess again?");
+            //            var guessAgain = Console.ReadLine();
+            //        if (guessAgain == "yes")
+            //        {
+            //            Console.WriteLine("Okay take another shot");
+            //            guess = int.Parse(Console.ReadLine());
+            //            if(guess == 1)
+            //            {
+            //                Console.WriteLine("booyah!");
+            //            }
+            //        }
+            //        else
+            //            guess = 1;
+            //    }
+
+            //    else if(guess == 1)
+            //    {
+            //        Console.WriteLine("booyah!");
+            //    }
+            //}
+            //while (guess != favNum);
 
 
 
-        }
+       // }
 
 
             //SWITCH EXERCISES
@@ -88,6 +88,25 @@ namespace SelectionStatements
             //        break;
 
             //}
+
+
+        {//SyntaxSugar Exercise
+
+            var answer = 9;
+            //string response;
+
+            var response = answer < 9 ? $"{answer} is less than nine" : answer > 9 ? $"{answer} is greater than nine" : $"{answer} is equal to nine";
+            Console.WriteLine(response);
+            //if (answer < 9)
+            //{
+                
+            //    // response = answer + " is less than nine";
+            //}
+
+
+
+
         }
     }
+}
 
